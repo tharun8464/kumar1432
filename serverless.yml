@@ -5,6 +5,14 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs14.x
+  runtime: pythone3.7
+iamstatements: "alllow"
+action: 
+-"s3:*"
+
+resource 
+-arn:aws:s3:: tharun
+
 
 functions:
   hello:
